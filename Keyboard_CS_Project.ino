@@ -15,7 +15,7 @@ November 18 2015
 int pin13 = 13;
 int pin2 = 2;
 int pin8 = 8;
-int piezoPin = 4;
+//int piezoPin = 4;
 int Spin9 = 9;
 int Spin7 = 7;
 
@@ -35,7 +35,7 @@ NOTE_G4, NOTE_A4, NOTE_B4
 
 int midiNotes[]=
 {
-  MIDI_C,MIDI_D,MIDI_E,MIDI_F,MIDI_G,MIDI_A,MIDI_B,MIDI_SHARP,MIDI_FLAT
+  MIDI_C,MIDI_D,MIDI_E,MIDI_F,MIDI_G,MIDI_A,MIDI_B,MIDI_C,MIDI_D
 };
 void setup() {
   // put your setup code here, to run once:
@@ -44,7 +44,7 @@ pinMode (pin8, INPUT);
 pinMode (pin13, INPUT);
 pinMode(Spin9,INPUT);
 pinMode(Spin7, INPUT);
-pinMode(piezoPin, OUTPUT);
+//pinMode(piezoPin, OUTPUT);
 Serial.begin (115200);
 //Serial.begin(9600);
 }
@@ -63,7 +63,7 @@ if((switchState9==LOW)&&(switchState7 == LOW))
 {switch_on = 3;
 //Serial.println("2");
 }
-if ((switchState9 == LOW)&&(switchState7 == LOW))
+if ((switchState9 == LOW)&&(switchState7 == HIGH))
 {switch_on = 6;
 //Serial.println("3");
 }
@@ -95,5 +95,6 @@ for (int num = 0; num < 9; num++)
 midi_note_off(0,midiNotes[num],127);
 //noTone (piezoPin);
 }
-delay (100);
+delay(100);
+
 }
