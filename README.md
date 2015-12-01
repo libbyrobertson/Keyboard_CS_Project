@@ -2,7 +2,7 @@
 
  - Elizabeth Robertson
  - 200351424
- - October 24 2015
+ - November 30 2015
 
 This is the repository for my Project.
 In this project I'm going to make music. 
@@ -28,15 +28,15 @@ The first buttons has had its wire cut.
 I am still trying to get more Midi notes in the midi library.
 
 # Source Code
--Download Keyboard_CS_Project.ino
--Download ardumidi.cpp
--Download ardumidi.h
--Upload the code to the board
--Download hairless Serial to Midi Serial bridge for your platform
--If using a PC will need to download loopMidi as well and create a specific port 
--Using whatever music program you have connect it to the Midi port through input
--Run all programs
--Turn on Serial to Midi bridge on the hairless converter
+ - Download Keyboard_CS_Project.ino
+ - Download ardumidi.cpp
+ - Download ardumidi.h
+ - Upload the code to the board
+ - Download hairless Serial to Midi Serial bridge for your platform
+ - If using a PC will need to download loopMidi as well and create a specific port 
+ - Using whatever music program you have connect it to the Midi port through input
+ - Run all programs
+ - Turn on Serial to Midi bridge on the hairless converter
 
 #Hardware
 To use this project one needs the specific hacked chidlren's keyboard connected to an Arduino uno associated with this project. The arduino must be attached to a computer via USB cable. 
